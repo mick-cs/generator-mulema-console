@@ -7,19 +7,19 @@
  */
 
 angular.module('<%= scriptAppName %>')
-    .controller('<%= cameledName %>Controller', function ($scope) {
+    .controller('<%= cameledName %>Controller', function($scope) {
 
     })
 
-    .config(function ($stateProvider) {
-        // Application routing
-        $stateProvider
-            .state('app.<%= cameledName %>', {
-                url: '/<%= cameledName %>',
-                templateUrl: 'src/pages/<%= cameledName %>/<%= cameledName %>.html',
-                controller: '<%= cameledName %>Controller',
-                data: {
-                    pageTitle: '<%= cameledName %>'
-                }
-            })
-    });
+.config(function($stateProvider) {
+    // Application routing
+    $stateProvider
+        .state('app.<%= cameledName %>', {
+            url: '/<%= cameledName %>',
+            templateUrl: 'app/pages/<%= cameledName %>/<%= cameledName %>.html',
+            controller: '<%= cameledName %>Controller',
+            data: {
+                pageTitle: '<%= cameledName %>'
+            }
+        })
+});
