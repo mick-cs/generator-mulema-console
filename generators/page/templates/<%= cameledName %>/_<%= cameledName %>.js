@@ -7,8 +7,8 @@
  */
 
 angular.module('<%= scriptAppName %>')
-    .controller('<%= cameledName %>Controller', function($scope) {
-
+    .controller('<%= cameledName %>Controller', function() {
+        var vm = this;
     })
 
 .config(function($stateProvider) {
@@ -17,7 +17,7 @@ angular.module('<%= scriptAppName %>')
         .state('app.<%= cameledName %>', {
             url: '/<%= cameledName %>',
             templateUrl: 'app/pages/<%= cameledName %>/<%= cameledName %>.html',
-            controller: '<%= cameledName %>Controller',
+            controller: '<%= cameledName %>Controller as vm',
             data: {
                 pageTitle: '<%= cameledName %>'
             }

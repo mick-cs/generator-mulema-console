@@ -6,13 +6,11 @@
  * Factory in the <%= scriptAppName %>.
  */
 angular.module('<%= scriptAppName %>')
-    .factory('<%= cameledName %>', function () {
-        // Public API here
+    .factory('<%= cameledName %>', function() {
+
+        var meaningOfLife = 42;
         return {
             meaningOfLife: meaningOfLife
         };
-        // Service logic
-        // ...
-        var meaningOfLife = 42;
 
     });
