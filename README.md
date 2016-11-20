@@ -13,7 +13,7 @@ npm install -g generator-mulema-console
 Then generate your new project:
 
 ```
-yo gulp-ionic
+yo mulema-console
 ```
 
 ## Generator for angular components
